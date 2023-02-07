@@ -46,6 +46,11 @@ if(args.t) {
 	fet += '&timezone=' + timezone;
 }}
 
+if (!(lat && lon)) {
+	console.log("Latitude must be in range");
+	process.exit(0);
+}
+
 console.log(fet)
 const response = await fetch(fet)
 const data = await response.json();
