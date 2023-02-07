@@ -14,8 +14,8 @@ if(args.h) {
 } else {
 
 var fet = 'https://api.open-meteo.com/v1/forecast/?daily=precipitation_hours&';
-var lat;
-var lon;
+var lat = 0;
+var lon = 0;
 var timezone;
 
 if(args.n) {
