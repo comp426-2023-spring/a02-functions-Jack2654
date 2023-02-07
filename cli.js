@@ -18,30 +18,21 @@ var lat;
 var lon;
 var timezone;
 
-
-
-
-
-
 if(args.n) {
 	lat = args.n;
-	fet += 'latitude=' + lat;
 }
 if(args.s) {
 	lat = -1 * args.s;
-	fet += 'latitude=' + lat;
 }
-
+fet += 'latitude=' + lat;
 
 if(args.e) {
 	lon = args.e;
-	fet += '&longitude=' + lon;
 }
 if(args.w) {
 	lon = -1 * args.w;
-	fet += '&longitude=' + lon;
 }
-
+fet += '&longitude=' + lon;
 
 if(args.z) {
 	timezone = args.z;
